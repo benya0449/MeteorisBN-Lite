@@ -1,0 +1,67 @@
+# Конфигурация MeteorisBN-Lite
+
+# Разрешённые миры для спавна сундука
+allowed-worlds:
+  - world
+  - world_survival
+
+# Шанс спавна каждую ночь (1–100%)
+auto-spawn-chance-percent: 8
+
+# Диапазон спавна в разрешенных мирах
+spawn-min-x: -400
+spawn-max-x: 400
+spawn-min-z: -400
+spawn-max-z: 400
+
+# Количество предметов в сундуке
+min-items: 4
+max-items: 9
+
+# Название сундука которое будет отображатьсяпри открытии
+chest-name: "&6&lМетеоритный тайник"
+
+# Голограмма над сундуком
+hologram-enabled: true
+# Надпись над сундуком
+hologram-timer-prefix: "&eОсталось: "
+# Время деспавна сундука если его не найдут
+despawn-time-seconds: 600   # секунд (10 минут по умолчанию)
+# Сообщение если сундук не найдут
+despawn-message: "&c[!] Сундук на %x%, %y%, %z% в мире %world% затерялся и пропал!"
+
+# Сообщения событий
+messages:
+  spawn: "&aСундук упал в мире &b%world% &aна &ex:%x% y:%y% z:%z%!" # Сообщение спавна сундука
+  found: "&6[Метеорит] &e%player% &aнашёл тайник в мире &b%world% &aна &ex:%x% y:%y% z:%z%!" # Сообщение когда игрок сломал/открыл сундук
+
+# Список из предметов и шанса их спавна внутри сундука
+loot:
+  DIAMOND: # Название предмета заглавными буквами
+    chance: 35 # Шанс его спавна в сундуке
+    amount-min: 3 # Максимальное количество в сундуке
+    amount-max: 7 # Минимальное количество в сундуке
+  IRON_INGOT:
+    chance: 70
+    amount-min: 12
+    amount-max: 32
+  GOLD_INGOT:
+    chance: 50
+    amount-min: 8
+    amount-max: 24
+  APPLE:
+    chance: 80
+    amount-min: 5
+    amount-max: 16
+  TNT:
+    chance: 15
+    amount-min: 1
+    amount-max: 4
+  OBSIDIAN:
+    chance: 40
+    amount-min: 6
+    amount-max: 15
+  ENCHANTED_BOOK:
+    chance: 20
+    amount-min: 1
+    amount-max: 1

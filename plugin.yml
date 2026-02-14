@@ -1,0 +1,14 @@
+name: MeteorisBN-Lite
+version: 1.0.0
+main: ru.benya0449.meteor.Main
+api-version: 1.12
+
+commands:
+  meteor:
+    description: Управление метеоритами
+    usage: /meteor spawn [мир]
+    permission: meteorisn.spawn
+
+permissions:
+  meteorisn.spawn:
+    default: op
